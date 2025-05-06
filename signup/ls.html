@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AMFIT login and signup</title>
+  <link rel="stylesheet" type="text/css" href="ls.css">
+</head>
+
+<body>
+
+<header>
+  
+ <img src="amfit.jpg" alt="Logo" class="logo">
+</header>
+
+<div class="signup-container">
+    <div class="signup-text">
+        <form id="signupForm" class="form" method="post" action="http://localhost/AMFIT/signup.php">
+            <h2><b><u>Sign Up</u></b></h2>
+            <input type="text" id="name" placeholder="Name" name="username">
+            <input type="text" id="contactno" placeholder="contact No." name="contact">
+            <input type="text" id="email" placeholder="Email" name="email">
+            <input type="password" id="Password" placeholder="Password" name="password">
+            <label>
+              <input type="checkbox" id="showPasswordCheckbox" onclick="showPassword('Password')"> Show Password
+            </label>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <label>
+              <input type="checkbox" id="showConfirmPasswordCheckbox" onclick="showPassword('confirmPassword')"> Show Password
+            </label>
+            <button type="submit" onclick="signup()">Sign Up</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<footer>
+    <p>&copy; 2025 Personalized Gym Training & Dietitian. All rights reserved.</p>
+</footer>
+
+<script src="ls.js"></script>
+
+</body>
+</html>

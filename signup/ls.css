@@ -1,0 +1,63 @@
+Open body {
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+position: absolute;
+top: 0; 
+left: 0;
+width: 200px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+.signup-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; 
+    margin: 100px auto; 
+    border-radius: 5px;
+    width: 500px; 
+}
+
+.signup-text {
+    background-color: #f5f7f5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #070707;
+    color: rgb(252, 251, 251);
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    color: #fbf9f9; 
+  }

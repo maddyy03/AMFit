@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietician Form</title>
+    <link rel="stylesheet" href="diet.css">
+</head>
+<body>
+    <header>
+        <img src="amfit.jpg" alt="Diet Logo" class="logo">
+        <h1>Diet Consultation Form</h1>
+    </header>
+   
+    <div class="form-container">
+        <form id="dietForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label>Medical Condition (if any):</label>
+            <input type="text" id="medicalCondition">
+
+            <label>Food Allergies (if any):</label>
+            <input type="text" id="foodAllergies">
+
+            <label for="foodType">Food Preference:</label>
+            <select id="foodType">
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+            </select>
+
+            <!-- This input field appears only when "Others" is selected 
+            <div id="otherFoodTypeContainer" style="display: none;">
+                <label for="otherFoodType">Please specify:</label>
+                <input type="text" id="otherFoodType">
+            </div> -->
+            
+            <label for="dietaryGoals">Dietary Goals:</label>
+            <input type="text" id="dietaryGoals" required>
+
+            <label for="dietChallenges">Diet Challenges:</label>
+            <input type="text" id="dietChallenges">
+
+            <label>Have you tried dieting before?</label>
+            <input type="radio" id="previousAttemptsYes" name="previousAttempts" value="Yes" checked> Yes
+            <input type="radio" id="previousAttemptsNo" name="previousAttempts" value="No"> No
+
+            <label>Do you engage in physical activity?</label>
+            <input type="radio" id="physicalActivityYes" name="physicalActivity" value="Yes" checked> Yes
+            <input type="radio" id="physicalActivityNo" name="physicalActivity" value="No"> No
+
+            <label for="commentsConcerns">Additional Comments:</label>
+            <textarea id="commentsConcerns"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="diet.js"></script>
+    <footer>
+      <p>&copy; 2025 Personalized Gym Training & Dietitian. All rights reserved.</p>
+  </footer>
+</body>
+</html>

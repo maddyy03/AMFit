@@ -1,0 +1,113 @@
+/* General styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: #2a2929;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+  position: relative;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Logo styling */
+.logo {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 120px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Title container */
+.title-container {
+  display: inline-block;
+}
+
+/* Heading */
+header h1 {
+  background-color: #f6f7f6; /* Background color for the title text */
+  display: inline; /* Ensure background only covers text */
+  padding: 5px 10px;
+  margin: 0;
+  color: #060606;
+  text-decoration: underline;
+}
+
+/* Form container */
+.form-container {
+  width: 30%;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Radio button container */
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.radio-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Button styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  color: #2a2929;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+}

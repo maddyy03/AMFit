@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gym.css">
+    <title>Gym Registration</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Gym Registration Form</h1>
+        </div>
+        <img src="amfit.jpg" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="gymForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required min="15" max="80">
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" required min="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" required min="30">
+                </div>
+
+                <div class="form-group">
+                    <label for="healthIssue">Health Issues (if any):</label>
+                    <input type="text" id="healthIssue" name="healthIssue">
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">Fitness Goal:</label>
+                    <select id="goal" name="goal" required>
+                        <option value="">Choose</option>
+                        <option value="Weight Loss">Weight Loss</option>
+                        <option value="Muscle Gain">Muscle Gain</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="text" id="otherGoal" name="otherGoal" placeholder="Please specify your goal" style="display: none;">
+                </div>
+
+                <!-- <div class="form-group">
+                    <label>Workout Preference:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="cardio" name="preference" value="Cardio"><label for="cardio">Cardio</label>
+                        <input type="checkbox" id="strength" name="preference" value="Strength Training"><label for="strength">Strength Training</label>
+                        <input type="checkbox" id="yoga" name="preference" value="Yoga"><label for="yoga">Yoga</label>
+                        <input type="checkbox" id="otherPreferenceCheckbox"><label for="otherPreferenceCheckbox">Other</label>
+                        <input type="text" id="otherPreference" name="otherPreference" placeholder="Please specify" style="display: none;">
+                    </div>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="experience">Gym Experience:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Choose</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Workout Duration (minutes/day):</label>
+                    <input type="number" id="duration" name="duration" required min="10">
+                </div>
+
+                <div class="terms-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the gym's terms and conditions.</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer> 2025 Personalized Gym Training & Dietitian. All rights reserved.</footer>
+
+
+    <script src="gym.js"></script>
+</body>
+</html>
